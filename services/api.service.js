@@ -3,5 +3,4 @@ const getUsers = () => {
         .then(value=>value.json())
 }
 
-export {getUsers}
-fgfddgdfdgd
+export {getUsers};
