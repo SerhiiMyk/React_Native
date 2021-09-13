@@ -10,16 +10,13 @@ const User = ({item}) => {
 export default User;
 let styles = StyleSheet.create({
     UserBox: {
-        flex: 1,
-        backgroundColor: 'red',
-        justifyContent:'center',
+        backgroundColor: 'tomato',
         textAlign: 'center',
     },
     margins: {
         marginBottom: 3
     },
     sizes:{
-        width: '70%',
-        height: 100
+        width: 200,
     }
 });
