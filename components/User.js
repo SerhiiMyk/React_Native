@@ -11,7 +11,7 @@ export default User;
 let styles = StyleSheet.create({
     UserBox: {
         flex: 1,
-        backgroundColor: 'silver',
+        backgroundColor: 'red',
         justifyContent:'center',
         textAlign: 'center',
     },
