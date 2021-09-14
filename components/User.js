@@ -1,6 +1,5 @@
 import React from "react";
-import {FlatList, StyleSheet} from "react-native";
-import {Text, View, Button, TouchableOpacity} from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 
 const User = ({item}) => {
     return <View style={[styles.UserBox,styles.margins,styles.sizes]}>

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {FlatList, StyleSheet} from "react-native";
-import {Text, View, Button, TouchableOpacity} from "react-native";
+import {FlatList, View} from "react-native";
 import {getUsers} from "../services/api.service";
 import User from "./User";
 
@@ -21,4 +20,3 @@ const Users = () => {
     );
 };
 export default Users;
-let styles = StyleSheet.create({});
