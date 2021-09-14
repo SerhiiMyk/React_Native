@@ -1,20 +1,33 @@
 import React from "react";
 import {StyleSheet} from "react-native";
-import {Text, View,Button,TouchableOpacity} from "react-native";
 import {createDrawerNavigator} from "@react-navigation/drawer";
 import About from "../screens/About";
 import Company from "../screens/Company";
 
-const Home= () => {
+const Home = () => {
 
-    let Drawer = createDrawerNavigator;
+    let Drawer = createDrawerNavigator();
     return (
-        <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Home">
-                <Drawer.Screen name="About" component={About} />
-                <Drawer.Screen name="Company" component={Company} />
-            </Drawer.Navigator>
-        </NavigationContainer>
+
+        <Drawer.Navigator initialRouteName="Home">
+            <Drawer.Screen
+                name="About"
+                component={About}
+                options={{title:'home page/about',
+                    headerStyle: {
+                        backgroundColor: 'powderblue'
+                    }
+                }}/>
+            <Drawer.Screen
+                name="Company"
+                component={Company}
+                options={{title:'home page/company',
+                    headerStyle: {
+                        backgroundColor: 'powderblue'
+                    }
+                }}/>
+        </Drawer.Navigator>
+
     )
 };
 export default Home;

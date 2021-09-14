@@ -6,26 +6,11 @@ const User = (props) => {
     let {item, nav: {navigate}} = props
     let onPress = () => {
         navigate('uDetails',{data:item});
-
     };
-    return <View style={[styles.UserBox, styles.margins, styles.sizes]}>
-        <Text style={styles.UserBox}>{item.name}</Text>
+    return <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',marginTop:10 }}>
+        <Text >{item.name}</Text>
+        <br/>
         <Button title={'user details'} onPress={onPress}/>
     </View>
 };
 export default User;
-let styles = StyleSheet.create({
-    UserBox: {
-        flex: 1,
-        backgroundColor: 'silver',
-        justifyContent: 'center',
-        textAlign: 'center',
-    },
-    margins: {
-        marginBottom: 3
-    },
-    sizes: {
-        width: '70%',
-        height: 100
-    }
-});
