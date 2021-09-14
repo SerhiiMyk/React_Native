@@ -1,10 +1,9 @@
 import React from "react";
-import {StyleSheet} from "react-native";
 import {createStackNavigator} from "@react-navigation/stack";
 import Users from "../components/Users";
 import UserDetails from "./UserDetails";
 
-const UsersPageNavigator = (props) => {
+const UsersPageNavigator = () => {
 
     const StackNavigator = createStackNavigator();
     return (
@@ -12,17 +11,22 @@ const UsersPageNavigator = (props) => {
             <StackNavigator.Screen
                 name={'users'}
                 component={Users}
-                options={{title:'user page',
+                options={{
+                    title: 'user page',
                     headerStyle: {
-                    backgroundColor: 'powderblue'}}}/>
+                        backgroundColor: 'powderblue'
+                    }
+                }}/>
             <StackNavigator.Screen
                 name={'uDetails'}
                 component={UserDetails}
-                options={{title:'user details page',
+                options={{
+                    title: 'user details page',
                     headerStyle: {
-                    backgroundColor: 'powderblue'}}}/>
+                        backgroundColor: 'powderblue'
+                    }
+                }}/>
         </StackNavigator.Navigator>
     )
 };
 export default UsersPageNavigator;
-let styles = StyleSheet.create({});

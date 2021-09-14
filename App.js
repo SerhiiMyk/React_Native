@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyleSheet, View} from 'react-native';
 import {NavigationContainer} from "@react-navigation/native";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 import UsersPageNavigator from "./screens/UserPageNavigator";
@@ -15,16 +14,18 @@ export default function App() {
                 <BottomTabNavigator.Screen
                     name={'home'}
                     component={Home}
-                    options={{title:'home page',
-                        headerShown: false}}/>
+                    options={{
+                        title: 'home page',
+                        headerShown: false
+                    }}/>
                 <BottomTabNavigator.Screen
                     name={'users'}
                     component={UsersPageNavigator}
-                    options={{title:'user page', headerShown: false}}
+                    options={{title: 'user page', headerShown: false}}
                 />
             </BottomTabNavigator.Navigator>
         </NavigationContainer>
     );
 }
 
-const styles = StyleSheet.create({});
+
